@@ -1,6 +1,8 @@
 # Cactus
 
-A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website.
+#  Cactus
+
+A responsive, clean anA responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website.
 
 :cactus: [Demo](https://probberechts.github.io/hexo-theme-cactus/)
 
