@@ -6,6 +6,8 @@ title: KBD
 
 ![](/images/3d5b1ea20ac892343c1735544d0d0c8.jpg)
 
+![](/images/KBD/3d5b1ea20ac892343c1735544d0d0c8.jpg)
+
 ![](/3d5b1ea20ac892343c1735544d0d0c8.jpg)
 
 ## CX60
