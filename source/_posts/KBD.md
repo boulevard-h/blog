@@ -10,7 +10,7 @@ title: Keyboards
 - **轴体**：Outemu 静音白轴
 - **键帽**：Menphis
 
-![wx_camera_1629278155067](./KBD/wx_camera_1629278155067.jpg)
+![wx_camera_1629278155067](/source/_posts/KBD/wx_camera_1629278155067.jpg)
 
 不上键帽似乎更好看(?
 
