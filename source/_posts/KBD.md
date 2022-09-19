@@ -4,6 +4,10 @@ title: KBD
 
 {% asset_img 3d5b1ea20ac892343c1735544d0d0c8.jpg This is an example image %}
 
+![](/images/3d5b1ea20ac892343c1735544d0d0c8.jpg)
+
+![](/3d5b1ea20ac892343c1735544d0d0c8.jpg)
+
 ## CX60
 
 送个我家猪的w & 入坑作
