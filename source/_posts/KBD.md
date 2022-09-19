@@ -2,6 +2,8 @@
 title: KBD
 ---
 
+{% asset_img 3d5b1ea20ac892343c1735544d0d0c8.jpg This is an example image %}
+
 ## CX60
 
 送个我家猪的w & 入坑作
@@ -156,7 +158,7 @@ UV磨砂版本的（更耐用&更贵）
 🐽的第二把也来咯
 
 - **PCB**：CIY 68
-- **外壳**：Spirit Blossom by 紫炁&boulevard
+- **外壳**：Spirit Blossom *by 紫炁&boulevard*
 - **轴体**：灰木V3 *by LEOBERG*
 - **键帽**：紫罗兰 *by SUO*
 
