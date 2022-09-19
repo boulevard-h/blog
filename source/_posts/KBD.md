@@ -10,11 +10,11 @@ title: Keyboards
 - **轴体**：Outemu 静音白轴
 - **键帽**：Menphis
 
-![wx_camera_1629278155067](./KBDwx_camera_1629278155067.jpg)
+![wx_camera_1629278155067](./KBD/wx_camera_1629278155067.jpg)
 
 不上键帽似乎更好看(?
 
-![wx_camera_1629706693126](./KBDwx_camera_1629706693126.jpg)
+![wx_camera_1629706693126](./KBD/wx_camera_1629706693126.jpg)
 
 ## Cheap68
 
@@ -25,11 +25,11 @@ title: Keyboards
 - **轴体**：TTC 快银轴
 - **键帽**：珊瑚海 / Olivia / 微光
 
-![IMG_20210905_160642](./KBDIMG_20210905_160642.jpg)
+![IMG_20210905_160642](./KBD/IMG_20210905_160642.jpg)
 
-![IMG_20210905_164343](./KBDIMG_20210905_164343.jpg)
+![IMG_20210905_164343](./KBD/IMG_20210905_164343.jpg)
 
-![IMG_20211128_140753](./KBDIMG_20211128_140753.jpg)
+![IMG_20211128_140753](./KBD/IMG_20211128_140753.jpg)
 
 ## Mr.Hat复刻
 
@@ -40,19 +40,19 @@ title: Keyboards
 - **轴体**：集贤 牛紫轴 *by 发狗*
 - **键帽**：德古拉伯爵 *by Akko*
 
-![IMG_20211114_135527](./KBDIMG_20211114_135527.jpg)
+![IMG_20211114_135527](./KBD/IMG_20211114_135527.jpg)
 
-![wx_camera_1637036762216](./KBDwx_camera_1637036762216.jpg)
+![wx_camera_1637036762216](./KBD/wx_camera_1637036762216.jpg)
 
-![IMG_20211111_131645](./KBDIMG_20211111_131645.jpg)
+![IMG_20211111_131645](./KBD/IMG_20211111_131645.jpg)
 
-![IMG_20211111_172345](./KBDIMG_20211111_172345.jpg)
+![IMG_20211111_172345](./KBD/IMG_20211111_172345.jpg)
 
 ### 一些小小的改造过程记录...
 
-![IMG_20211105_083114](./KBDIMG_20211105_083114.jpg)
+![IMG_20211105_083114](./KBD/IMG_20211105_083114.jpg)
 
-![IMG_20211025_225444](./KBDIMG_20211025_225444.jpg)
+![IMG_20211025_225444](./KBD/IMG_20211025_225444.jpg)
 
 ## Buff67 v2
 
@@ -62,9 +62,9 @@ title: Keyboards
 - **轴体**：Lumia&MMD Cream / HyperGlide BLACK *by cherry* / KTT 白轴v3 / 草莓酒红
 - **键帽**：Merlin / 袜子
 
-![IMG_20211204_102325](./KBDIMG_20211204_102325.jpg)
+![IMG_20211204_102325](./KBD/IMG_20211204_102325.jpg)
 
-![IMG_20220116_104041](./KBDIMG_20220116_104041.jpg)
+![IMG_20220116_104041](./KBD/IMG_20220116_104041.jpg)
 
 ## Next 75
 
@@ -74,9 +74,9 @@ title: Keyboards
 - **轴体**：RGB Speed Silver *by cherry*
 - **键帽**：古风仓颉字根
 
-![IMG_20220716_190525](./KBDIMG_20220716_190525.jpg)
+![IMG_20220716_190525](./KBD/IMG_20220716_190525.jpg)
 
-![IMG_20220121_213411](./KBDIMG_20220121_213411.jpg)
+![IMG_20220121_213411](./KBD/IMG_20220121_213411.jpg)
 
 ## JINX 67 powered by ZUOER
 
@@ -91,23 +91,23 @@ title: Keyboards
 
 镭射版本的
 
-![IMG_20220327_101958](./KBDIMG_20220327_101958.jpg)
+![IMG_20220327_101958](./KBD/IMG_20220327_101958.jpg)
 
 ### JINX V2
 
 UV磨砂版本的（更耐用&更贵）
 
-![wx_camera_1652506151486](./KBDwx_camera_1652506151486.jpg)
+![wx_camera_1652506151486](./KBD/wx_camera_1652506151486.jpg)
 
-![IMG_20220427_100407](./KBDIMG_20220427_100407.jpg)
+![IMG_20220427_100407](./KBD/IMG_20220427_100407.jpg)
 
 ### 内胆改造
 
 灰常软弹的自制硅胶粒~
 
-![IMG_20220815_103133](./KBDIMG_20220815_103133.jpg)
+![IMG_20220815_103133](./KBD/IMG_20220815_103133.jpg)
 
-![-6e71f0d90a73400e](./KBD-6e71f0d90a73400e.jpg)
+![-6e71f0d90a73400e](./KBD/-6e71f0d90a73400e.jpg)
 
 ## VAST75
 
@@ -117,9 +117,9 @@ UV磨砂版本的（更耐用&更贵）
 - **轴体**：Carol Switch *by JWICK*
 - **键帽**：SODA *by XIAO Studio*
 
-![IMG_20220627_191055](./KBDIMG_20220627_191055.jpg)
+![IMG_20220627_191055](./KBD/IMG_20220627_191055.jpg)
 
-![wx_camera_1656914188764](./KBDwx_camera_1656914188764.jpg)
+![wx_camera_1656914188764](./KBD/wx_camera_1656914188764.jpg)
 
 ## Cherry G80-11900
 
@@ -131,13 +131,13 @@ UV磨砂版本的（更耐用&更贵）
 
 **Old：**
 
-![wx_camera_1658556962286](./KBDwx_camera_1658556962286.jpg)
+![wx_camera_1658556962286](./KBD/wx_camera_1658556962286.jpg)
 
 **Brand New：**
 
-![IMG_20220814_190042](./KBDIMG_20220814_190042.jpg)
+![IMG_20220814_190042](./KBD/IMG_20220814_190042.jpg)
 
-![IMG_20220814_163859](./KBDIMG_20220814_163859.jpg)
+![IMG_20220814_163859](./KBD/IMG_20220814_163859.jpg)
 
 ## 亚克力 Spring
 
@@ -147,9 +147,9 @@ UV磨砂版本的（更耐用&更贵）
 - **轴体**：草莓奶昔缝合轴 / MM Switch *by Wuque Studio*
 - **键帽**：手稿
 
-![亚克力spring1](./KBD亚克力spring1.jpg)
+![亚克力spring1](./KBD/亚克力spring1.jpg)
 
-![亚克力spring2](./KBD亚克力spring2.jpg)
+![亚克力spring2](./KBD/亚克力spring2.jpg)
 
 ## Spirit Blossom Powered by ZUOER
 
@@ -160,10 +160,10 @@ UV磨砂版本的（更耐用&更贵）
 - **轴体**：灰木V3 *by LEOBERG*
 - **键帽**：紫罗兰 *by SUO*
 
-![3d5b1ea20ac892343c1735544d0d0c8](./KBD3d5b1ea20ac892343c1735544d0d0c8.jpg)
+![3d5b1ea20ac892343c1735544d0d0c8](./KBD/3d5b1ea20ac892343c1735544d0d0c8.jpg)
 
-![68528fbdfb4a49e0f5be105ca982e40](./KBD68528fbdfb4a49e0f5be105ca982e40.jpg)
+![68528fbdfb4a49e0f5be105ca982e40](./KBD/68528fbdfb4a49e0f5be105ca982e40.jpg)
 
-![cadaf8beee015f6e757722742a6d04e](./KBDcadaf8beee015f6e757722742a6d04e.jpg)
+![cadaf8beee015f6e757722742a6d04e](./KBD/cadaf8beee015f6e757722742a6d04e.jpg)
 
 ## To Be Continue
