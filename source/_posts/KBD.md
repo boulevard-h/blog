@@ -1,5 +1,7 @@
 ---
 title: 客制化之旅记录OvO
+categories: 客制化键盘
+tag: [客制化键盘, DIY]
 ---
 
 ## CX60

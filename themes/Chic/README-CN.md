@@ -56,6 +56,7 @@ git clone https://github.com/Siricee/hexo-theme-Chic.git Chic
 ```
 
 ## Configuration 配置
+
 <details>
 <summary><mark>点击展开配置文件</mark></summary>
 
@@ -218,7 +219,7 @@ mathjax:
     mathjax: true # 加入这个声明，这篇文章就会开启mathjax渲染
     ---
     ```
-LaTeX语法这里不做解释，本主题中，单dollar符号包围的为行内公式，例：`$f(x)=ax+b$`，双dollar符号包围的为块公式，例`$$f(x)=ax+b$$`更多写法请参考LaTeX和[Demo site中的公式测试页面](https://siricee.github.io/hexo-theme-Chic/2019/07/05/MathJax_test/)。
+    LaTeX语法这里不做解释，本主题中，单dollar符号包围的为行内公式，例：`$f(x)=ax+b$`，双dollar符号包围的为块公式，例`$$f(x)=ax+b$$`更多写法请参考LaTeX和[Demo site中的公式测试页面](https://siricee.github.io/hexo-theme-Chic/2019/07/05/MathJax_test/)。
 
 ### 图片标题
 
@@ -232,7 +233,7 @@ LaTeX语法这里不做解释，本主题中，单dollar符号包围的为行内
     ```
     {% img [class names] /path/to/image [width] [height] '"alt text" "title text"' %}
     ```
-所以如果你仅仅想方便快捷引入图片，那你应该使用 GFM 语法，这种方式也是兼容性最好的方案。
+    所以如果你仅仅想方便快捷引入图片，那你应该使用 GFM 语法，这种方式也是兼容性最好的方案。
 
 但如果你需要显示**图片标题**，你就应该使用第二种方案，**图片标签方式**。
 - `"alt text"`用来显示当图片加载失败时垫底的提示文字。

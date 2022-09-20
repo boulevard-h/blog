@@ -9,8 +9,7 @@ nav:
   About: /about
 
 # favicon
-favicon: /favicon.ico
-
+favicon: /favicon of cactus.ico
 # Profile
 nickname: Boulevard H
 
@@ -26,7 +25,7 @@ links:
   Blog: /archives
   # Category:
   # Tags: 
-  # Link:
+  Link: http://skye-rs.github.io
   # Resume:
   # Publish:
   # Trophy:

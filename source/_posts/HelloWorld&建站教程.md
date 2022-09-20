@@ -1,10 +1,9 @@
 ---
 
 title: HelloWorld & 建站教程
-
+categories: 博客搭建
+tags: 简易教程
 ---
-
-
 
 ## 教程来源
 
