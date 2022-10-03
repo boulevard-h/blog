@@ -1,7 +1,7 @@
 ---
 title: SQL连接
 date: 2022-10-02 20:52:58
-catagories: 数据库原理
+categories: 数据库原理
 tags: [数据库原理, mysql]
 ---
 
