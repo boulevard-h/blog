@@ -283,7 +283,7 @@ layouts中的keymap比较有趣，需要在常用的配列网站[Keyboard Layout
 #define VIAL_KEYBOARD_UID {0xDA, 0xDB, 0x70, 0x9F, 0xE7, 0x18, 0x63, 0x55}
 
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 2 }
-#define VIAL_UNLOCK_COMBO_COLS { 0, 11 };l.
+#define VIAL_UNLOCK_COMBO_COLS { 0, 11 }
 ```
 
 第一行，按惯例，照抄
@@ -313,12 +313,57 @@ python util/vial_generate_keyboard_uid.py
 仍然在vial分支的qmk工程目录下面执行：
 
 ``` shell
-vial compile -kb 键盘名/[rev_x] -km vial
+qmk compile -kb 键盘名/[rev_x] -km vial
 ```
 
-也就是把qmk换成vial，keymap选择vial即可。
-
 生成以后，刷入固件，访问网站[Vial Web](https://vial.rocks/)就可以在线改键。
+
+### 进阶：Vial旋钮固件自定义
+
+#### 开启QMK编码器映射功能
+
+QMK旋钮固件有两种编写方式：编码器映射（Mapping）、回调（Callback）。Vial的目前版本只支持映射方式。
+
+首先需要在`rules.mk`中打开编码器映射：
+
+``` makefile
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
+```
+
+然后在`config.h`中配置旋钮引脚和解析度：
+
+``` c
+/* Encoder Setting */
+#define ENCODERS_PAD_A { A10 }
+#define ENCODERS_PAD_B { A8 }
+#define ENCODER_RESOLUTION 4
+```
+
+再到`keymap.c`中支持开启编码器映射：
+
+``` c
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [_HOME] =   { ENCODER_CCW_CW(KC_1, KC_2) },
+    [_FN2] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+};
+#endif
+```
+
+映射支持多层多旋钮，这里以两层（HOME、FN2）一个旋钮为例。
+
+到这里，就通过编码器映射方式启用了旋钮，功能应该是可以正常使用的。
+
+#### 开启Vial对于旋钮改键支持
+
+到配列编辑网站加入两个按键，代表旋钮的两个方向，按键内容如下：
+
+![image-20221112130821772](/images/QMK/image-20221112130821772.png)
+
+然后按照前面教程所说的，把这个网站生成的json复制到vial.json->layouts->keymap即可
+
+再次编译刷写，进入vial就可以看到了。
 
 ## 参考教程
 
