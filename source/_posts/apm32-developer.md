@@ -497,3 +497,124 @@ HAPTIC_DRIVER += SOLENOID
 **关于有源无源蜂鸣器区别：**有源指带有震荡源，加上电压就会响；无源指没有震荡源，需要加上一个震荡信号驱动。
 
 软件不需要变，和电磁阀的一样；硬件更简单，把蜂鸣器正级接到MCU，负极接地
+
+### rev3（最终版本）
+
+#### 版本说明
+
+采用了ULN2003A驱动电磁阀，相比TIP120更小
+
+将与电磁阀共引脚的5v有源蜂鸣器换为使用AUDIO系统控制的无源压电蜂鸣器，单独使用A8引脚控制，做到了与电磁阀独立按键控制
+
+#### 硬件电路
+
+##### 电磁阀
+
+ULN2003A是一种贴片式达林顿晶体管阵列，是在参考有电磁阀的套件（m0110、Sodd65）时发现的，其资料如下
+
+![img](/images/apm32dvlp/v2-40761f2fc2d5e7df823236032800a417_r.jpg)
+
+uln2003a集成了七个达林顿阵列，可以有七组独立的输入输出。当然，如果一对输入输出带来的电流增益太小，无法驱动你的设备的话，也可以进行串联，即：一个输入信号接入到几个IN脚，负载接到对应的几个out脚。
+
+网上的电路：
+
+![img](/images/apm32dvlp/2018041516285477)
+
+按照电路，先用一对达林顿管，发现力度不是很够，电磁阀只有微弱的运动。
+
+于是一个一个并联尝试，增加到四对达林顿管并联的时候发现效果还可以了。
+
+##### 压电蜂鸣器
+
+压电蜂鸣器比较简单，似乎不分正负极，一个接规定的输出引脚（推荐A8）、一个接地即可。
+
+#### 代码攥写
+
+电磁阀方面，只是改变了外围电路，代码还是和之前一样。
+
+蜂鸣器方面，因为期望与电磁阀分开用按键控制，而之前选用的反馈功能是不支持的，所以在qmk官方文档中搜索buzzer关键字的时候，发现了除了反馈功能以外，音频功能（audio）也支持piezo buzzer（压电蜂鸣器）。
+
+于是就决定使用压电蜂鸣器，并开始攥写其代码。
+
+##### DAC与PWM驱动
+
+压电式蜂鸣器也是一种无源蜂鸣器，需要使用模拟信号驱动，QMK官方给出的两种方式是DAC数模转换与PWM脉冲宽度调制。
+
+具体是什么不用理解（因为我也不会），只要知道我们需要这两种方式是让单片机输出模拟信号驱动蜂鸣器的方法即可。
+
+而qmk官方文档提到，stm32f1xx系列是不支持DAC的，所以我们可以选择的就只有PWM模式。
+
+PWM又分为软件PWM和硬件PWM，具体差别在哪我也没看懂，用硬件PWM就行。
+
+注意不是每一个脚都支持硬件PWM的，官方给出的是A8脚，我们也使用这个。如果一定要用其他脚的话，需要查看STM32/APM32的datasheet，寻找有TIMx_CHy表示的脚，这表示这个脚使用TIMER X、属于PWM CHANNEL Y。
+
+##### 具体代码
+
+首先需要根据[Audio Driver (qmk.fm)](https://docs.qmk.fm/#/audio_driver?id=pwm-hardware)开启PWM，设置TIM1,CHANNEL1（如果用的不是A8，这里需要对应修改）：
+
+`halconf.h`
+
+``` c
+//halconf.h:
+#define HAL_USE_PWM                 TRUE
+#define HAL_USE_PAL                 TRUE
+#define HAL_USE_GPT                 TRUE
+#include_next <halconf.h>
+```
+
+`mcuconf.h`
+
+``` c
+// mcuconf.h:
+#include_next <mcuconf.h>
+#undef STM32_PWM_USE_TIM1
+#define STM32_PWM_USE_TIM1                  TRUE
+#undef STM32_GPT_USE_TIM4
+#define STM32_GPT_USE_TIM4                  TRUE
+```
+
+`config.h`
+
+``` c
+//config.h:
+#define AUDIO_PIN A8
+#define AUDIO_PWM_DRIVER PWMD1
+#define AUDIO_PWM_CHANNEL 1
+#define AUDIO_STATE_TIMER GPTD4
+```
+
+然后到`rules.mk`开启AUDIO、设置驱动方式为pwm硬件：
+
+``` makefile
+AUDIO_ENABLE = yes
+AUDIO_DRIVER = pwm_hardware
+```
+
+最后，再到`config.h`加上一行`#define AUDIO_CLICKY`
+
+AUDIO_CLICKY是指按键的时候发出声音，这正是我们需要的，同时，音频还有很多其他功能，甚至可以放8bit位宽的歌曲，这里就不细说，可以参见qmk官方文档（这个真的很重要）。
+
+添加几个关于AUDIO_CLICKY的按键：
+
+``` c
+// keymap.c:
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
+	[_HOME] = LAYOUT(
+		KC_1, KC_2, KC_3,
+		KC_4, KC_5, KC_6, 
+		KC_7, KC_8, MO(1)),
+
+    [_FN2] = LAYOUT(
+		CLICKY_TOGGLE, HPT_TOG, QK_BOOT,
+		HPT_FBK, CLICKY_UP, CLICKY_DOWN,  
+		HPT_DWLI, HPT_DWLD, KC_9),
+
+};
+```
+
+`CLICKY_TOGGLE`：开关按键声音，这个和旁边的`HPT_TOG`分开了，自然也就可以独立控制属于AUDIO模块的蜂鸣器和属于Haptic Feedback模块的电磁阀了
+
+`CLICKY_UP`：按键时蜂鸣器声音频率+，也就是调整PWM波形的频率来提高音调
+
+`CLICKY_DOWN`：与上一个相反
