@@ -200,3 +200,15 @@ UV磨砂版本的（更耐用&更贵）
 ![e4716b76d8ba44d195c30168b31259a](/images/KBD/e4716b76d8ba44d195c30168b31259a.jpg)
 
 ![10ea33626ea2168b667ab417629d67f](/images/KBD/10ea33626ea2168b667ab417629d67f.jpg)
+
+### Mr.Hat复刻 闪黑
+
+自喷漆用了一年，表面的黑色部分实在是顶不住了，重新找人做了个闪黑：
+
+![c9ce15a0fb1e6944337c89d7dd316e5](/images/KBD/c9ce15a0fb1e6944337c89d7dd316e5.jpg)
+
+![04d78c5901a2c93382ea25a6819cd34](/images/KBD/04d78c5901a2c93382ea25a6819cd34.jpg)
+
+![0ecb3434ff9f6b9118079e048206867](/images/KBD/0ecb3434ff9f6b9118079e048206867.jpg)
+
+![ed374227e28d2b29331fbbee4c2456f](/images/KBD/ed374227e28d2b29331fbbee4c2456f.jpg)
