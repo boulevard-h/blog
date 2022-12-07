@@ -3,7 +3,10 @@ title: SQL连接
 date: 2022-10-02 20:52:58
 categories: 数据库原理
 tags: [数据库原理, mysql]
+mathjax: true
 ---
+
+just test: $\lim x = 1$
 
 ## 前言
 
