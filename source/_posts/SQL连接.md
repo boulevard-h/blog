@@ -6,8 +6,6 @@ tags: [数据库原理, mysql]
 mathjax: true
 ---
 
-just test: $\lim x = 1$
-
 ## 前言
 
 MySQL前面的基本语法都还暂时还行，连接这块的东西稍微有点多，所以整理一下。算是复习前面关系代数的连接，也是熟悉一下MySQL语法。

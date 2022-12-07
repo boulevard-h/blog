@@ -2,6 +2,7 @@
 title: SQL查询剩余的部分
 date: 2022-10-07 19:56:26
 categories: 数据库原理
+mathjax: true
 tags: [数据库原理, mysql]
 ---
 
