@@ -10,7 +10,7 @@ tags: [数据库原理, mysql]
 
 ## 嵌套查询（子查询）
 
-也就是把一个查询块潜逃到另一个查询快的WHERE或者HAVING子句中，一个最简单的例子：
+也就是把一个查询块（SELECT-FROM-WHERE）嵌套到另一个查询快的WHERE或者HAVING子句中，一个最简单的例子：
 
 ``` mysql
 mysql> SELECT Sname FROM Student WHERE Sno IN (SELECT Sno FROM SC WHERE Cno='2');
@@ -25,6 +25,8 @@ mysql> SELECT Sname FROM Student WHERE Sno IN (SELECT Sno FROM SC WHERE Cno='2')
 ```
 
 这个命令的意思非常简单，就是先查询SC表中Cno='2'的Sno，然后在student表中查询这些Sno对应的Sname。
+
+注意：子查询中不能使用ORDER BY
 
 ### 嵌套查询的求解方法
 
@@ -131,7 +133,7 @@ WHERE Sage < (SELECT MAX(Sage) FROM ... WHERE ...) 就是等价的
 
 注意有的时候千万别脑补想当然了，比如说我最开始看到<ANY的时候就想到：小于任何？那不就是<MIN(Sage)吗！
 
-但是实际上这个<ANY的意识是只需要存在一个或以上比它大的就可以了。所以我觉得用SOME是不是比ANY看起来更舒服呢...
+但是实际上这个<ANY的意思是只需要存在一个或以上比它大的就可以了。所以我觉得用SOME是不是比ANY看起来更舒服呢...
 
 #### 带有EXISTS的查询
 

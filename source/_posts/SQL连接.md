@@ -108,11 +108,13 @@ S-T.sc
 
 #### 自然连接
 
-其实上面这个等值连接就是一个自然连接，但还是示范一下语法：
-
 ` SELECT * FROM Student NATURAL JOIN SC;`
 
-结果毋庸置疑和上面一样，就不复制粘贴了。
+结果相比上面的等值连接，只是把两个Sno列合并了
+
+##### USING
+
+自然连接还可以用`USING(A1,...,An)`来规定需要使用的属性组。且这个时候可以省去`NATURAL`，直接使用`... JOIN ... USING(...)`来表达自然连接。
 
 ### 非等值连接
 
@@ -120,7 +122,7 @@ S-T.sc
 
 ## 过滤谓词
 
-连接以后，还可以在WHERE中加入其他条件，称为过滤谓词，如：
+连接以后，还可以在WHERE中加入其他条件，称为**过滤谓词**，如：
 
 ```sql
 mysql> SELECT * FROM Student, SC WHERE Student.Sno=SC.Sno AND SC.Grade > 85;
@@ -153,11 +155,23 @@ FIRST.Cpno = SECOND.Cno;
 
 功能就是显示先修课的先修课（爷爷课是吧
 
+### 自生连接的引用
+
+e.g.1 查询薪水不同的任意两位：
+
+``` sql
+SELECT T1.Tname, T2.Tname
+From Teacher T1, Teacher T2
+WHERE T1.Salary > T2.Salary;
+```
+
+注意这里用>而不是≠，是为了防止出现(T1,T2)、(T2,T1)这种重复结果
+
 ## 外连接
 
 这一块东西就比较乱了...
 
-外连接可以是基于**ON**子句的：
+外连接可以是基于**ON**子句的，ON中除了有等值条件以外**还可以加入其他判断条件**：
 
 ```sql
 mysql> SELECT * FROM Student LEFT OUTER JOIN SC ON (Student.Sno=SC.Sno);
@@ -180,13 +194,15 @@ mysql> SELECT * FROM Student LEFT OUTER JOIN SC ON (Student.Sno=SC.Sno);
 SELECT * FROM Student NATURAL LEFT OUTER JOIN SC;
 ```
 
-结果一样。
+结果一样，只是自然连接合并了两个Sno。
 
-### 关于ON和WHERE的区别
+### 关于外连接ON和WHERE的区别
+
+**使用外连接的时候**
 
 WHERE可以看作是先建立连接，然后对于条件筛选；
 
-ON对于左边表中的任何一个元组x，无论右边表中存不存在一个元组y使得(x, y)满足ON条件，都至少会返回一个x元组，即：即使不应该返回任何(x, y)，也应该返回一个(x, NULL)
+ON则是和JOIN一起执行的：ON对于左边表中的任何一个元组x，无论右边表中存不存在一个元组y使得(x, y)满足ON条件，都至少会返回一个x元组，即：即使不应该返回任何(x, y)，也应该返回一个(x, NULL)。
 
 #### 示例
 
