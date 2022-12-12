@@ -3,6 +3,7 @@ title:  数据库原理第三章 SQL
 date: 2022-12-10 20:25:42
 categories: 数据库系统原理
 tags: [数据库]
+
 ---
 
 ## SQL概述
@@ -177,7 +178,9 @@ GROUP BY可以细化聚集函数的作用对象，如果要对聚集函数进行
 
 ### SQL的特别用法
 
-- ``` sql
+- CASE语句：
+
+  ``` sql
   CASE
   	WHEN Condition then result
   	...
