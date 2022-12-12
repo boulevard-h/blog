@@ -177,7 +177,7 @@ GROUP BY可以细化聚集函数的作用对象，如果要对聚集函数进行
 
 ### SQL的特别用法
 
-- ``` SQL
+- ``` sql
   CASE
   	WHEN Condition then result
   	...
