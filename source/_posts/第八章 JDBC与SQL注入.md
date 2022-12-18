@@ -55,7 +55,7 @@ pStmt.executeUpdate();
 
 原因：
 
-![image-20221217215732148](E:\Blog\source\images\DBSNote\image-20221217215732148.png)
+![image-20221217215732148](/images/DBSNote/image-20221217215732148.png)
 
 ### SQL注入测试
 
@@ -117,7 +117,7 @@ select * from users where userid = 1;delete users;
 
 #### 常用SQL注入特殊字符总结
 
-![image-20221217221644607](E:\Blog\source\images\DBSNote\image-20221217221644607.png)
+![image-20221217221644607](/images/DBSNote/image-20221217221644607.png)
 
 ### SQL注入的预防
 
