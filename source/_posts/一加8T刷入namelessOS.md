@@ -2,7 +2,7 @@
 title: 一加8T刷入namelessOS
 date: 2022-12-19 11:04:55
 categories: 搞机
-tags:[安卓刷机,简易教程]
+tag: [安卓刷机]
 ---
 
 ## 准备工作
