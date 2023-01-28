@@ -212,3 +212,79 @@ UV磨砂版本的（更耐用&更贵）
 ![0ecb3434ff9f6b9118079e048206867](/images/KBD/0ecb3434ff9f6b9118079e048206867.jpg)
 
 ![ed374227e28d2b29331fbbee4c2456f](/images/KBD/ed374227e28d2b29331fbbee4c2456f.jpg)
+
+## PaperPlane 65%
+
+在外网看到的，很有工业风设计感，所以就打算自己复刻。
+
+**外壳：**铝合金阳极喷砂工艺，边缘质感比较糙。带有镜面不锈钢配重
+
+**定位板：**铝合金在这个厚度变形太严重，所以换成了Fr-4
+
+**PCB：**用QMK+电磁阀+蜂鸣器+USB HUB+Vial方案制作，由于经费问题，采用的是黄芯紫线
+
+**轴体：**HG红（暂时还懒得润和装）
+
+**键帽：**星河山川黑同刻 克苏鲁字根（暂未到货）
+
+![d98ffa70af6c528186f075da6cf3fd8](/images/KBD/d98ffa70af6c528186f075da6cf3fd8.jpg)
+
+![c04a35c83c27d8fcda0509dfb512afe](/images/KBD/c04a35c83c27d8fcda0509dfb512afe.jpg)
+
+![5f2bbfda075485e23593baae356b412](/images/KBD/5f2bbfda075485e23593baae356b412.png)
+
+![bcf87c3bbecd758ef98a4b2ee339f99](/images/KBD/bcf87c3bbecd758ef98a4b2ee339f99.jpg)
+
+### QwertyKeys QK75
+
+现在的主力键盘了，虽然设计不多，但是配上这套键帽出奇的好看，硬GAS的手感和轴体也很搭。也算是圆满了我对奶白黑镜的执念。
+
+**轴体：**AKKO&KTT&窗总 雪兰灰轴
+
+**定位板：**Fr-4
+
+**键帽：**AlephKeys C64 Dark
+
+![44ec3c260603dede5d253e1a7f30565](/images/KBD/44ec3c260603dede5d253e1a7f30565.jpg)
+
+![0ce27189c83180c4275dd102136ce5f](/images/KBD/0ce27189c83180c4275dd102136ce5f.jpg)
+
+![543105293eea1bbe46d29ccb929e744](/images/KBD/543105293eea1bbe46d29ccb929e744.jpg)
+
+![5ccb1d877c0ce5480b54c19c4248aa7](/images/KBD/5ccb1d877c0ce5480b54c19c4248aa7.jpg)
+
+## Apple M0110 注塑复刻
+
+两百多的价格，HHKB配列复古造型、无钢、电磁阀，可以说是一把很合格的复古玩具了。
+
+**轴体：**Gateron Pro 黄轴
+
+**填充：**AB硅胶+Poron
+
+**键帽：**星河山川外设 复古键帽 俄文字根 + Caps EPBT 9009灯帽
+
+**个性：**麦金塔
+
+![402f5cf3cb2b92f4b4dffc92906533d](/images/KBD/402f5cf3cb2b92f4b4dffc92906533d.jpg)
+
+![5471860c321ad27df849d8a6214650e](/images/KBD/5471860c321ad27df849d8a6214650e.jpg)
+
+![62c99344a60316089300e5b77914fdf](/images/KBD/62c99344a60316089300e5b77914fdf.jpg)
+
+## 炁 65% PCB
+
+两把zuoer用的CIY68 pcb在无线方面实在是太差劲了，而且老是抽风，所以用假期时间又用优联方案制作了一套代替PCB。
+
+主控采用的是罗技k580的主控，优点是便宜，缺点是不像k375s主控自带排线接口，很方便接线，需要自己设计转接板来接线。第一次弄转接板的时候焊盘嘎嘎掉，差点给我心态弄爆炸了。
+
+![9056240104e7f405c4e802dc2487de7](/images/KBD/9056240104e7f405c4e802dc2487de7.jpg)
+
+还有一个缺点就是不能改键，68配列的F区都需要使用多路复用器来实现，真·物理切层（反正CIY也好不到哪去）。
+
+![9eeacb13aba905bb1815c4b7ca472ee](/images/KBD/9eeacb13aba905bb1815c4b7ca472ee.jpg)
+
+做好的板子印上Logo还是很帅的，锂电池充放电模块转移到了PCB上面，节省键盘内部空间，当然为了保留兼容性，还是设计了外接电池模块的接口。
+
+配列也做到了多佩列兼容，支持小门牙67、阶梯Caps和7回。
+
+最大的优点还是罗技优联的强大功能，连接稳定性高的同时耗电量非常的低、同时休眠以后的唤醒完全无延迟。
