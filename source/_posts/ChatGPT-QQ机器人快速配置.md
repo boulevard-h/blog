@@ -34,10 +34,10 @@ tags: [ChatGPT, 脚本]
 
 - 配置QQ号
 
-![image-20230322163044228](/source/images/ChatGPT-Mirai/image-20230322163044228.png)
+![image-20230322163044228](/images/ChatGPT-Mirai/image-20230322163044228.png)
 
-- 配置梯子![image-20230322163126537](/source/images/ChatGPT-Mirai/image-20230322163126537.png)
-- 配置OpenAI API密钥![image-20230322163141324](/source/images/ChatGPT-Mirai/image-20230322163141324.png)
+- 配置梯子![image-20230322163126537](/images/ChatGPT-Mirai/image-20230322163126537.png)
+- 配置OpenAI API密钥![image-20230322163141324](/images/ChatGPT-Mirai/image-20230322163141324.png)
 
 当然，提供了很多的OpenAI登陆账号，这里选择除了贵没有缺点的API方式（反正有免费额度
 
@@ -55,11 +55,11 @@ Login qq号 qq密码 设备类型
 
 然后，如果是第一次登陆的话，会要进行验证，如下图所示：
 
-![image-20230322163737380](/source/images/ChatGPT-Mirai/image-20230322163737380.png)
+![image-20230322163737380](/images/ChatGPT-Mirai/image-20230322163737380.png)
 
 复制这个captcha链接，在滑动验证码app中输入并完成验证：
 
-![image-20230322163809239](/source/images/ChatGPT-Mirai/image-20230322163809239.png)
+![image-20230322163809239](/images/ChatGPT-Mirai/image-20230322163809239.png)
 
 会得到一串TX值，赋值TX值，直接输入到Mirai终端就可以完成登录
 
@@ -67,6 +67,6 @@ Login qq号 qq密码 设备类型
 
 然后点击`启动ChatGPT.bat`，如下图就是登陆成功：
 
-![image-20230322163918590](/source/images/ChatGPT-Mirai/image-20230322163918590.png)
+![image-20230322163918590](/images/ChatGPT-Mirai/image-20230322163918590.png)
 
 到私聊或者到群里@进行对话测试

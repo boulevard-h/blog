@@ -22,7 +22,7 @@ tags: [wsl, CUDA]
 
 参考开头给出的链接，只需要输入图中的这些命令就可以配置完成
 
-![image-20230322164339279](/source/images/wsl-cuda/image-20230322164339279.png)
+![image-20230322164339279](/images/wsl-cuda/image-20230322164339279.png)
 
 然后到wsl里面再输入一遍`nvidia-smi`即可验证
 

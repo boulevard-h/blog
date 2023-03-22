@@ -23,7 +23,7 @@ tags: [wsl, ssh]
 
 过程比较基础，不再赘述，/etc/ssh/sshd_config如下所示：
 
-![image-20230322162125318](/source/images/wsl-ssh/image-20230322162125318.png)
+![image-20230322162125318](/images/wsl-ssh/image-20230322162125318.png)
 
 打开以后在Windows powershell中输入：
 
