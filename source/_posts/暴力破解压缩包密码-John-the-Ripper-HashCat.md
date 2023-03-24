@@ -120,16 +120,19 @@ zip2john test.zip > hash.txt
 在Windows下，需要用到CryWin安装，到[Cygwin Installation](https://cygwin.com/install.html)下载`setup-x86_64.exe`，放到`C:/crywin64/`目录下，然后在Windows PowerShell执行
 
 ``` shell
-C:\cygwin64\setup-x86_64.exe -q -P gcc-core -P libgcc1 -P make -P perl C:\cygwin64\setup-x86_64.exe -q -P libssl-devel -P libbz2-devel
+C:\cygwin64\setup-x86_64.exe -q -P gcc-core -P libgcc1 -P make -P perl
+C:\cygwin64\setup-x86_64.exe -q -P libssl-devel -P libbz2-devel
 C:\cygwin64\setup-x86_64.exe -q -P libgmp-devel -P zlib-devel
 C:\cygwin64\setup-x86_64.exe -q -P libOpenCL-devel -P libcrypt-devel
 ```
 
 输入命令以后安装的过程基本上是自动的，只不过第一次安装的时候会要你选源，选一个国内的即可
 
-然后下载https://github.com/openwall/john/archive/bleeding-jumbo.zip，解压放到`C:/crywin64/home/[用户名]`目录
+然后下载[https://github.com/openwall/john/archive/bleeding-jumbo.zip](https://github.com/openwall/john/archive/bleeding-jumbo.zip)，解压放到`C:/crywin64/home/[用户名]`目录
 
 打开crywin64 terminal（点击图标即可），进入上面解压的目录，开始编译：
+
+注意：make -sj4中，sj后面是你的逻辑处理器个数，按照自己的电脑来
 
 ``` shell
 ./configure && make -s clean && make -sj4
