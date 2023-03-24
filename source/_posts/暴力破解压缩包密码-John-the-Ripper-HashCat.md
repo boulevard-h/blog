@@ -89,7 +89,7 @@ zip2john test.zip > hash.txt
 
 对于不同文件类型有不同的爆破模式`-m mode_num`，需要根据被爆破文件的格式和hash.txt的内容来在[example_hashes \[hashcat wiki\\]](https://hashcat.net/wiki/doku.php?id=example_hashes)中查询到模式码，如：
 
-![image-20230324093110247](C:\Users\boulevard\AppData\Roaming\Typora\typora-user-images\image-20230324093110247.png)
+![image-20230324093110247](/images/john/image-20230324093110247.png)
 
 对于上面的hash.txt，就只需要尝试`-m 17200/17210/17220/17225/17230`
 
