@@ -96,7 +96,7 @@ zip2john test.zip > hash.txt
 所以，最后的调用代码为：
 
 ``` shell
-./hashcat.bin -a 3 -m 17200 hash.txt Cst. -1 ?l?u?d -1 ?l?u?d -1 ?l?u?d -1 ?l?u?d -1 ?l?u?d -1 ?l?u?d
+./hashcat.bin -a 3 -m 17200 -1 ?l?u?d hash.txt Cst.?1?1?1?1?1?1
 ```
 
 ### 问题&缺点
@@ -131,8 +131,6 @@ C:\cygwin64\setup-x86_64.exe -q -P libOpenCL-devel -P libcrypt-devel
 然后下载[https://github.com/openwall/john/archive/bleeding-jumbo.zip](https://github.com/openwall/john/archive/bleeding-jumbo.zip)，解压放到`C:/crywin64/home/[用户名]`目录
 
 打开crywin64 terminal（点击图标即可），进入上面解压的目录，开始编译：
-
-注意：make -sj4中，sj后面是你的逻辑处理器个数，按照自己的电脑来
 
 ``` shell
 ./configure && make -s clean && make -sj4
