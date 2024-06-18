@@ -1,6 +1,7 @@
 ---
 title: 客制化之旅记录OvO
 categories: 客制化键盘
+date: 2023-08-27 08:39:00
 tag: [客制化键盘, DIY]
 ---
 

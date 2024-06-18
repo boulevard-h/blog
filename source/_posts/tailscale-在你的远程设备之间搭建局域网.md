@@ -1,8 +1,9 @@
 ---
 layout: blog
 title: 'tailscale: 在你的远程设备之间搭建局域网'
+categories: 不务正业の小玩意
 date: 2024-06-18 10:48:47
-tags:
+tags: [远程连接, 虚拟局域网]
 ---
 
 ## 前言

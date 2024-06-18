@@ -1,6 +1,7 @@
 ---
 title: Hexo建站图片加载问题
 categories: 博客搭建
+date: 2022-10-03 11:58:00
 tags: 简易教程
 
 ---

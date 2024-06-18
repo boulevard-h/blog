@@ -3,6 +3,7 @@
 title: LaTeX语法支持教程
 categories: 博客搭建
 tags: 简易教程
+date: 2022-12-7 12:07:00
 mathjax: true
 ---
 
