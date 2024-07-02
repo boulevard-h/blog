@@ -6,6 +6,14 @@ date: 2024-07-01 19:40:21
 tags: [Linux, Kernel]
 ---
 
+## 参考链接
+
+[Linux内核：sk_buff解析 - 唐稚骅 - 博客园 (cnblogs.com)](https://www.cnblogs.com/tzh36/p/5424564.html)
+
+[skb结构和相关操作函数 - 简书 (jianshu.com)](https://www.jianshu.com/p/3c5d5fa339fc)
+
+[Linux 内核网络协议栈 ------sk_buff 结构体 以及 完全解释 （2.6.16） - 明明是悟空 - 博客园 (cnblogs.com)](https://www.cnblogs.com/x_wukong/p/6650056.html)
+
 ## 1. SKB 结构概览
 
 SKB 的结构是这样一个很复杂的图，可以看到 skb 分为三部分：控制（`struct sk_buff` 本身）、线性数据、非线性数据（skb_shared_info）

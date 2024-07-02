@@ -6,6 +6,12 @@ date: 2024-07-01 20:35:10
 tags: [Linux, Kernel]
 ---
 
+## 参考链接
+
+[linux网络报文接收发送浅析_netif tx netif rx-CSDN博客](https://blog.csdn.net/wangquan1992/article/details/112129162)
+
+[链路层和网络层的接口 （linux网络子系统学习 第五节 ） _51CTO博客_linux链路层编程](https://blog.51cto.com/yaoyang/1269713)
+
 ## 1. 以太网驱动收包处理流程
 
 以 ne2k_pci 驱动为例，介绍 linux 中以太网设备驱动是怎么从设备读取数据、构造 skb、并上传到上层的。
