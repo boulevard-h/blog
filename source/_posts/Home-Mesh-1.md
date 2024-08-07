@@ -40,7 +40,7 @@ Mesh 分为有线 Mesh 和无线 Mesh 两种方式，有线 Mesh 的路由器之
 
 位于弱电箱的 VLAN 交换机和主路由器旁的 VLAN 交换机只需要一根网线连接，但是却能够划分出两个 VLAN 来，图中的 VLAN2 用于连接光猫和主路由 WAN 口，VLAN3 用于连接主路由的 LAN 口和子路由的 WAN 口。
 
-![img](/images/Home-Mesh/v2-02d1ba50ba96059fe345de8790661f25_r.jpg)
+![img](/images/Home-Mesh-1/v2-02d1ba50ba96059fe345de8790661f25_r.jpg)
 
 ## 3. AP Mesh
 
