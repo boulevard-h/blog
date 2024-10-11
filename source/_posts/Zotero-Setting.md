@@ -33,7 +33,7 @@ categories: 杂项
 
 如果懒得注册的话，也可以用前面几个不需要密钥的服务凑合一下。
 
-![image-20241011171856198](images/Zotero-Setting/image-20241011171856198.png)
+![image-20241011171856198](/images/Zotero-Setting/image-20241011171856198.png)
 
 ### 2.2 绿青蛙
 
