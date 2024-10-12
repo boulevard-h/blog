@@ -103,5 +103,5 @@ theme: Chic
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/boulevard-h/blog.git
-  branch: main
+  repo: git@github.com:boulevard-h/boulevard-h.github.io.git
+  branch: gh-pages
