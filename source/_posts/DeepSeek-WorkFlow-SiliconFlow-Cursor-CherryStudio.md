@@ -31,7 +31,15 @@ Cherry Studio 是一个支持多模型的 AI 助手客户端，只需要添加 A
 
 ## 3. Cursor 配置
 
-Cursor 是基于 vscode 开发的 AI IDE，其 AI 功能比 vscode 更加强大，例如报错以后一键对报错提问等。Cursor 支持 GPT-o1、Claude-3.5、deepseek 等模型，但是使用官方提供的模型服务需要 20 美刀一个月（没有 visa 或 PayPal 等的话即使愿意出钱也会被卡在支付方式上），所以选择不开通官方会员，而是使用自己的 API
+Cursor 是基于 vscode 开发的 AI IDE，其 AI 功能比 vscode 更加强大，Cursor 的辅助功能大致分为三部分：
+
+- Cursor Tab：类似 VSCode Copilot 的自动补全
+- Chat：在窗口右侧换出一个对话窗口，和正常的ChatGPT一致，但是可以更方便的将代码文件、报错信息等输入到Chat中
+- Edit：选中一部分代码，输入指令自动修改代码
+
+**注：**Chat&Edit 功能都支持使用自定义API，但是 Cursor Tab 只能使用官方提供的模型，因此**使用 API 不能完全代替 Cursor 会员**的所有功能，还是花钱开会员最省心（或者实在觉得20美刀一个月负担太大的话，可以折腾一下免费使用无线续杯等操作
+
+下面进入正题，将 deepseek API 接入到 cursor chat&editor 中：
 
 在 Cursor-Model 中，首先取消勾选所有自带的模型（包括自带的 deepseek），添加两个模型：deepseek-ai/DeepSeek-R1和deepseek-ai/DeepSeek-V3
 
