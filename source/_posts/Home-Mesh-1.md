@@ -2,8 +2,7 @@
 layout: blog
 title: 家庭Mesh组网（一）—— Mesh 介绍
 date: 2024-08-06 23:07:02
-categories: 不务正业の小玩意
-tags: [网络, Mesh, 无线]
+categories: 瞎折腾
 ---
 
 家里的老华硕 [RT-AC66U](https://www.asus.com.cn/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ac66u-b1/) 在辛苦工作了五年后终于开始出问题了，WiFi 信号一天消失不见好几次，刚好电信的百兆宽带也要到期了，准备换成移动手机送的千兆。于是打算顺便把家里的路由器一换，组成现在流行的多路由器 Mesh 组网方案。

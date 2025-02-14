@@ -2,7 +2,7 @@
 layout: blog
 title: 使用SiliconFlow API+Cursor+CherryStudio搭建DeepSeek AI工作流
 date: 2025-02-12 11:06:43
-categories: 杂项
+categories: 环境搭建
 ---
 
 ## 1. API 的选择与获取

@@ -3,7 +3,6 @@ layout: blog
 title: 'Linux Network 1: SKB'
 categories: 'Linux Kernel'
 date: 2024-07-01 19:40:21
-tags: [Linux, Kernel]
 ---
 
 ## 参考链接

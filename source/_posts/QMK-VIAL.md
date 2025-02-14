@@ -2,7 +2,6 @@
 title: QMK编译+Vial在线改键功能
 date: 2022-10-24 08:14:00
 categories: 客制化键盘
-tags: [客制化键盘, DIY]
 ---
 
 ## 环境

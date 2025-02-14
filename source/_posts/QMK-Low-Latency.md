@@ -3,7 +3,6 @@ layout: blog
 title: QMK 固件降低延迟
 date: 2024-10-11 17:08:47
 categories: 客制化键盘
-tags: [客制化键盘, DIY]
 ---
 
 平常打游戏的键盘用的是 kbdfans 的 kbd8x_mk2，一测延迟有 10ms，刚好又看到 qmk 仓库中有这把键盘的源码，于是想着修改一下参数，降低延迟。

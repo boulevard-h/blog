@@ -2,7 +2,7 @@
 layout: blog
 title: Zotero Setting
 date: 2024-10-11 17:09:56
-categories: 杂项
+categories: 环境搭建
 ---
 
 ## 1. 下载 zotero & 安装插件

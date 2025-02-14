@@ -2,8 +2,7 @@
 layout: blog
 title: 家庭Mesh组网（二）—— 家庭 Mesh 配置
 date: 2024-08-07 00:17:12
-categories: 不务正业の小玩意
-tags: [网络, Mesh, 无线]
+categories: 瞎折腾
 ---
 
 ## 1. 家庭网络拓扑分析
