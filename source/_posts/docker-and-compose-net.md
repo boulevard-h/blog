@@ -2,7 +2,7 @@
 layout: blog
 title: docker与compose部署分布式网络
 date: 2025-02-25 14:13:52
-tags: 环境搭建
+categories: 环境搭建
 ---
 
 最近手里有一个go写的区块链工程，之前都是在本机上部署节点：写一个shell脚本，循环为每个节点go run启动

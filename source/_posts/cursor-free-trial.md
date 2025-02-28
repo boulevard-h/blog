@@ -10,21 +10,24 @@ categories: 环境搭建
 用到的工具：
 
 - https://github.com/chengazhen/cursor-auto-free 修改机器码
-- https://smailpro.com/ 临时邮箱
+- https://activity.adspower.net/ 指纹浏览器
+- ~~https://smailpro.com/ 临时邮箱~~
 
 ## 1. 修改机器码
 
 Windows：
 
 ```powershell
-irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
+irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
-Mac：
+Mac/Linux：
 
 ```bash
-curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_mac_id_modifier.sh| sudo bash
+curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_mac_id_modifier.sh -x http://127.0.0.1:7897 | sudo bash
 ```
+
+这里 `-x` 选项是系统代理软件的地址，自行修改或删除
 
 运行以后，大概会出现：
 
@@ -67,4 +70,6 @@ curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com
 
 ## 2. 注册新邮箱
 
-进入 https://smailpro.com/，获得一个临时邮箱，进入 cursor，退出原有账号，然后用临时邮箱注册登录，临时邮箱的验证码会发送到 smailpro 网页上，注册完毕以后，就可以用这个临时邮箱继续白嫖 14 天 free trial 了
+之前使用smailpro等临时邮箱网站来白嫖14天免费试用，最近发现可能cursor的风控有所加强，这些网站的域名被ban了，申请试用的时候提示unauthorized request
+
+目前暂时比较好的解决办法是，下载一个AdsPower指纹浏览器，然后注册一个微软outlook邮箱，被ban的风险稍微小一些
