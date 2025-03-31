@@ -73,3 +73,11 @@ curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/
 之前使用smailpro等临时邮箱网站来白嫖14天免费试用，最近发现可能cursor的风控有所加强，这些网站的域名被ban了，申请试用的时候提示unauthorized request
 
 目前暂时比较好的解决办法是，下载一个AdsPower指纹浏览器，然后注册一个微软outlook邮箱，被ban的风险稍微小一些
+
+## 更新
+
+补充说明：现在cursor又加强了风控，有些账号注册以后，无法免费试用、或者免费试用的额度超级少，下面是几点总结：
+
+1. 梯子，有时候hk的不成功可以用jp
+2. 邮箱，都是outlook，但是姓名拼音+年份比乱码要容易通过
+3. 在指纹浏览器中注册邮箱以后，顺便到里面把cursor也注册了，拿到了free trial确认是比较多的额度以后，再去重置和登录cursor
