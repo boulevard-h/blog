@@ -37,6 +37,8 @@ DeepSeek的出现在国内确实是引发了轰动，虽然在解决比较复杂
 
 不过Cursor的槽点就是玩不起，期初是20刀的Pro，每个月500条高级模型快速请求；但是后面变成了不透明的计费方式，而且明显感知越来越少和慢了，需要开通更贵的Pro Plus和Ultra模式才能够获得原先Pro就能做到的体验。
 
+**250716更新：**Cursor现在ban了大陆IP，说是Anthropic加强了打击力度，但是顺带连GPT和Gemini也不能用了。虽然现在把梯子改成TUN模式还能用，但下次加大力度是哪天呢？idn
+
 ## 5. Grok-3
 
 马圣的Grok-3在做一些学术调研的时候真的很棒，Grok的联网搜索模式很多数据都是来源于arxiv、Springer这些学术网站，不会出现其他AI瞎编文献的情况，堪称写综述的神
@@ -56,7 +58,38 @@ Gemini主打一个超长上下文问文件管理，印象最深刻的是把很�
 
 缺点：
 
-- Gemini-2.5-Pro综合能力很强，但是在Coding方面还是比Claude差一些
+- Gemini-2.5-Pro综合能力很强，但是在Coding方面还是比Claude差一些，一贯的啰嗦
 - 使用起来还是没有IDE built-in的Agent强，比如查看Diff就没有Cursor方便
 
 当然，在CLI Agent这块目前最强的还是Claude Code，但是考虑到Anthropic对IP的封号力度和价格还是不敢去充钱尝试，最近国产的Kimi-V2好像完全兼容Anthropic的API，有人折腾出了替换的方式，后面有空可以试试
+
+## 8. Claude Code + Kimi-K2
+
+Kimi这波的新模型学习手机圈玩起**强**行**兼**容了，不仅完全兼容了 Anthropic 的API格式，而且最忍俊不禁的是：即使Claude Code在请求API的时候使用的model_name是Claude-*，Kimi 也会接受并默默调用自己的模型返回
+
+配置非常简单，和正常配置API一样导出环境变量就行，不会弄的话还有一堆脚本，一次性完成安装、跳过初始化、写入API环境变量到rc
+
+Kimi官方虽然给了15元的API额度，但其速度则是按照充值金额计费的，免费的速度几乎没法用；硅基流动的API速度快一些，但是配置了以后使用CC会出问题（具体表现为Agent一直在兜圈子，例如listing files...重复很多遍，而Kimi官方APi则不会）
+
+## 9. 自建知识库
+
+有一个文档集，例如某个库最新版本的API文档，或者某个庞大开源系统的技术文档，想要让其作为知识库给LLM，以便针对这个文档集向LLM问问题。
+
+### 1) 自建RAG
+
+RAG，按照我浅薄的理解是这样工作的：
+
+1. 将文档分块成多个trunk，每个trunk都用embedding模型进行向量化
+2. 当用户输入一个query的时候，匹配query与每个trunk的相似度，返回其中的top K个trunk作为结果
+
+而搭建RAG的平台很多，我选择了最方便的Dify，此外还有ragflow、llamaindex等，并且使用Qwen3作为Base模型，提示词则是让gemini给我生成了一段
+
+在试用一段时间后，发现主要有两个问题：
+
+1. RAG的第一步是分块，而分块的粗细粒度是一个需要讲究的trade-off，如果分块过小（例如Dify默认按照 `\n\n` 分块）则返回的上下文不够；如果分块过大（例如返回一整个文档）则慢且消耗token。ragflow和llamaindex据说拥有更加好的分块处理，但是分块终究是需要根据应用场景不断进行召回测试才能做到比较好的
+2. Dify默认的RAG模板流程是：用户query - 将query作为输入直接查询RAG - 将query和RAG查询结果都给LLM - LLM生成最终回答。但是用户的query并不一定是精确的，一种较好的方法是让LLM自己生成查询语句（不过我懒得做了）
+
+### 2) Google Drive + Gemini
+
+说到复杂文档的问答，还是Gemini用起来舒服。但是在Gemini网页版一次一次提交文件看起来有点呆，后面发现Gemini可以和Google Drive云盘联动，而且Google AI Pro是送2TB空间的，所以尝试了一下把整个文档的文件夹传到Google Drive里边，然后直接在Google Drive召唤Gemini就可以提问了，比用Dify搭建的RAG好用不少
+
