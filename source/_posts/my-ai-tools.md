@@ -93,3 +93,9 @@ RAG，按照我浅薄的理解是这样工作的：
 
 说到复杂文档的问答，还是Gemini用起来舒服。但是在Gemini网页版一次一次提交文件看起来有点呆，后面发现Gemini可以和Google Drive云盘联动，而且Google AI Pro是送2TB空间的，所以尝试了一下把整个文档的文件夹传到Google Drive里边，然后直接在Google Drive召唤Gemini就可以提问了，比用Dify搭建的RAG好用不少
 
+### 3) Code Agent 集成
+
+网页对话对于代码相关工作还是太难受了，后面发现还可以轻松把文档集成给 Cursor、Gemini-CLI、Claude-Code等：
+
+1. Cursor：自带文档功能，复制一下文档网址，等爬取+index完成就好
+2. Gemini-CLI/Claude-Code：暂时不自带，可以使用MCP工具context7，MCP可以本地部署也可以用官网的sse地址；目前有两万多文档库在里边可以直接用，如果没有的话也可以自己添加，不需要登录，添加以后是公开的
