@@ -99,3 +99,5 @@ RAG，按照我浅薄的理解是这样工作的：
 
 1. Cursor：自带文档功能，复制一下文档网址，等爬取+index完成就好
 2. Gemini-CLI/Claude-Code：暂时不自带，可以使用MCP工具context7，MCP可以本地部署也可以用官网的sse地址；目前有两万多文档库在里边可以直接用，如果没有的话也可以自己添加，不需要登录，添加以后是公开的
+
+两个我都试了一下，context7好像更加注重代码API，在环境配置问题上Cursor的表现比Gemini-CLI + context7更好
