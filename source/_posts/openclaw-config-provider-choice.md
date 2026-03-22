@@ -2,7 +2,7 @@
 title: openclaw配置服务商选择
 date: 2026-02-14 23:30:00 +0800
 updated: 2026-03-22 21:11:00 +0800
-categories: [环境搭建]
+categories: [Claw🦞]
 tags: [OpenClaw, AI, 配置]
 ---
 
