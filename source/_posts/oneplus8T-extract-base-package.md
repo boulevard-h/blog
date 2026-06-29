@@ -6,7 +6,7 @@ categories: 搞机
 
 ## 前言
 
-之前因为不满ColorOS的臃肿刷入了原生的nameless A13：[一加8T刷入namelessOS | Boulevard's Blog (blog-boulevard.top)](https://blog-boulevard.top/2022/12/19/一加8t刷入namelessos/)
+之前因为不满ColorOS的臃肿刷入了原生的nameless A13：[一加8T刷入namelessOS](/2022/12/19/oneplus8T-namelessOS/)
 
 但是nameless的功能实在太少，bug实在太多，堪比从MI10搬运过来的MIUI13包。所以继续折腾一下，从nameless A13刷入到大氢的亲兄弟——国外测试已经更新到了安卓13的OxygenOS
 
